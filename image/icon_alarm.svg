@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+    <g data-name="타원 226" style="fill:rgba(255,255,255,.6);stroke:rgba(211,35,58,.6)">
+        <circle cx="20" cy="20" r="20" style="stroke:none"/>
+        <circle cx="20" cy="20" r="19.5" style="fill:none"/>
+    </g>
+    <g data-name="94-bell" transform="translate(7.5 6)">
+        <path data-name="패스 6553" d="m21 21-2.125-2.077v-4.691A6.3 6.3 0 0 0 12.5 8a6.3 6.3 0 0 0-6.375 6.232v4.691L4 21z" transform="translate(.5 -2)" style="stroke:#d3233a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+        <path data-name="패스 6554" d="M12 27a3.68 3.68 0 0 0 7.36 0" transform="translate(-2.5 -7.68)" style="stroke:#d3233a;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;fill:none"/>
+        <rect data-name="사각형 6189" width="2" height="4" rx="1" transform="translate(12 3)" style="fill:#d3233a"/>
+    </g>
+</svg>
