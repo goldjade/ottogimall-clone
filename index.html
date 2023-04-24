@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
 
     <meta http-equiv="Imagetoolbar" content="no" />
     <meta name="viewport" content="width=1280" />
@@ -48,12 +51,21 @@
       href="https://www.ottogimall.co.kr/data/misc/25QlfkhLSW.s18eigp80xgi.PNG"
     />
     <title>오뚜기몰 ┃오뚜기몰엔 다 있다!</title>
+
     <script src="js/prefixfree.min.js"></script>
     <script src="js/respond.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
     <![endif]-->
-    <script src="js/script.js"></script>
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
@@ -117,6 +129,36 @@
         </div>
       </header>
       <!-- header -->
+      <!-- slide -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#"><img src="image/banner/banner_1.jpg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="image/banner/banner_2.jpg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="image/banner/banner_3.jpg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="image/banner/banner_4.jpg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="image/banner/banner_5.jpg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="image/banner/banner_6.jpg" alt="" /></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#"><img src="image/banner/banner_7.jpg" alt="" /></a>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- slide -->
     </div>
   </body>
 </html>
