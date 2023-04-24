@@ -1,0 +1,219 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  color: #1d1d1b;
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+  border: none;
+}
+body {
+  font-size: 16px;
+  color: #1d1d1b;
+  font-family: Pretendard sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  letter-spacing: -0.4px;
+  background-color: teal;
+}
+/* 공통 */
+section {
+  margin-top: 100px;
+}
+.fix {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.inner {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.wrap {
+  display: block;
+  position: relative;
+}
+/* header top*/
+.header {
+  z-index: 9999;
+}
+.h-inner {
+}
+
+.h-inner .h-top {
+  position: relative;
+  padding: 40px 0 30px 0;
+  text-align: center;
+  background: #fff;
+}
+.h-inner .h-top .inner {
+  position: relative;
+  text-align: center;
+}
+.h-inner .h-top .inner .h-top-utils {
+  position: absolute;
+  display: flex;
+  right: 0;
+  top: 0;
+  text-align: center;
+}
+.h-inner .h-top .inner .h-top-utils li {
+  padding-left: 15px;
+}
+.h-inner .h-top .inner .h-top-utils li > a {
+  margin-left: 15px;
+  font-size: 14px;
+  line-height: 32px;
+}
+.h-inner .h-top .inner .h-top-utils li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  height: 12px;
+  border-left: 1px solid #e4e4e4;
+  transform: translateY(-50%);
+}
+.h-inner .h-top .inner .h-top-utils li:first-child {
+  padding-left: 0px;
+}
+.h-inner .h-top .inner .h-top-utils li:first-child::before {
+  content: none;
+}
+
+/* heder bottom*/
+.h-inner .h-bottom {
+  background: #fff;
+}
+
+.h-inner .h-bottom .h-bottom-item {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+.h-inner .h-bottom .h-bottom-item .category {
+  align-items: center;
+  display: flex;
+}
+.h-inner .h-bottom .h-bottom-item .category .cate-bt {
+  padding-left: 32px;
+  box-sizing: content-box;
+  position: relative;
+  border: none;
+  cursor: pointer;
+}
+.h-inner .h-bottom .h-bottom-item .category .cate-bt::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 22px;
+  height: 2px;
+  background-color: #1d1d1b;
+}
+.h-inner .h-bottom .h-bottom-item .category .cate-bt::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 22px;
+  height: 2px;
+  background-color: #1d1d1b;
+}
+.h-inner .h-bottom .h-bottom-item .category .cate-bt span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 22px;
+  height: 2px;
+  background-color: #1d1d1b;
+  transform: translateY(-50%);
+}
+.h-inner .h-bottom .h-bottom-item .category .cate-bt span {
+  font-weight: 500;
+  font-size: 18px;
+}
+.h-inner .h-bottom .h-bottom-item .category .cate-list {
+  position: absolute;
+  left: 0;
+  top: 50px;
+}
+
+.h-inner .h-bottom .h-bottom-item .category .gnb {
+  display: flex;
+  margin-left: 100px;
+}
+.h-inner .h-bottom .h-bottom-item .category .gnb > li {
+  margin-left: 90px;
+}
+.h-inner .h-bottom .h-bottom-item .category .gnb > li:first-child {
+  margin-left: 0px;
+}
+.h-inner .h-bottom .h-bottom-item .category .gnb > li > a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+}
+.h-inner .h-bottom .h-bottom-item .category .gnb > li > a:hover {
+  color: #d3233a;
+}
+
+/* heder bottom-right */
+.search-box {
+  display: flex;
+  align-items: center;
+}
+.search-box .input-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 350px;
+  padding: 15px 30px;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+}
+.search-box .input-wrap > input {
+  font-size: 18px;
+  width: 100%;
+  border: none;
+}
+.search-box .input-wrap .icon {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background: url("../image/icon_search_21.svg");
+}
+.search-box .input-wrap .icon > span {
+  font-size: 0;
+}
+.search-box .mypage {
+  width: 30px;
+  height: 30px;
+  background: url("../image/icon_my.svg");
+  margin-left: 50px;
+}
+.search-box .mypage > span {
+  font-size: 0;
+}
