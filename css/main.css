@@ -1,11 +1,5 @@
 @charset "utf-8";
-@font-face {
-  font-family: "Pretendard-Regular";
-  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
-    format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
+@import url("./font.css");
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +19,7 @@ img {
   border: none;
 }
 body {
+  height: 8000px;
   font-size: 16px;
   color: #1d1d1b;
   font-family: Pretendard sans-serif;
@@ -32,12 +27,18 @@ body {
   font-weight: 400;
   word-break: keep-all;
   overflow-wrap: break-word;
-  letter-spacing: -0.4px;
+  letter-spacing: -1px;
   background-color: teal;
 }
 /* 공통 */
-section {
+.section {
   margin-top: 100px;
+}
+input:focus {
+  outline: none;
+}
+::placeholder {
+  color: #d3d3d3;
 }
 .fix {
   position: fixed;
@@ -115,6 +116,7 @@ section {
 .h-inner .h-bottom .h-bottom-item .category {
   align-items: center;
   display: flex;
+  width: 100%;
 }
 .h-inner .h-bottom .h-bottom-item .category .cate-bt {
   padding-left: 32px;
@@ -122,6 +124,7 @@ section {
   position: relative;
   border: none;
   cursor: pointer;
+  background-color: transparent;
 }
 .h-inner .h-bottom .h-bottom-item .category .cate-bt::before {
   content: "";
@@ -152,6 +155,8 @@ section {
   transform: translateY(-50%);
 }
 .h-inner .h-bottom .h-bottom-item .category .cate-bt span {
+  white-space: nowrap;
+  word-break: keep-all;
   font-weight: 500;
   font-size: 18px;
 }
@@ -163,13 +168,13 @@ section {
 
 .h-inner .h-bottom .h-bottom-item .category .gnb {
   display: flex;
+  justify-content: space-between;
   margin-left: 100px;
+  width: 100%;
 }
 .h-inner .h-bottom .h-bottom-item .category .gnb > li {
-  margin-left: 90px;
 }
 .h-inner .h-bottom .h-bottom-item .category .gnb > li:first-child {
-  margin-left: 0px;
 }
 .h-inner .h-bottom .h-bottom-item .category .gnb > li > a {
   font-weight: 500;
@@ -184,18 +189,22 @@ section {
 .search-box {
   display: flex;
   align-items: center;
+  margin-left: 12.51%;
 }
 .search-box .input-wrap {
   position: relative;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 350px;
-  padding: 15px 30px;
+  height: 45px;
+  padding: 0 30px;
   border: 1px solid #ddd;
   border-radius: 30px;
 }
 .search-box .input-wrap > input {
-  font-size: 18px;
+  font-size: 16px;
+
   width: 100%;
   border: none;
 }
@@ -212,7 +221,7 @@ section {
   width: 30px;
   height: 30px;
   background: url("../image/icon_my.svg");
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .search-box .mypage > span {
   font-size: 0;
