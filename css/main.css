@@ -44,7 +44,7 @@ body {
   background-color: salmon;
 }
 /* 공통 */
-.mt100 {
+.mt-100 {
   margin-top: 100px;
 }
 .swiper {
@@ -212,6 +212,7 @@ body {
   left: 0;
   width: 240;
   height: calc(100vh - 175px);
+  max-height: 780px;
   background: #fff;
   z-index: 10;
 }
@@ -415,4 +416,32 @@ body {
 .swiper-pagination-current {
   font-weight: 700;
   color: #fff;
+}
+
+.brand-list {
+  margin-top: 130px;
+}
+.brand-list ul {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 75px;
+}
+.brand-list ul li a img {
+  width: 90px;
+  height: 90px;
+}
+
+.brand-list ul li a span {
+  display: block;
+  text-align: center;
+  margin-top: 11px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  color: #333;
+}
+
+.brand-list ul li:hover span {
+  font-weight: 700;
+  transition: 0.3s;
 }
