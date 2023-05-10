@@ -148,7 +148,6 @@ body {
 .h-bottom {
   position: relative;
   display: flex;
-  height: 75px;
   justify-content: space-between;
   background: #fff;
 }
@@ -157,6 +156,10 @@ body {
   align-items: center;
   font-size: 18px;
   font-weight: 500;
+}
+.cate {
+  height: 75px;
+  line-height: 75px;
 }
 .cate-bt {
   padding-left: 32px;
@@ -204,6 +207,7 @@ body {
 /* 전체메뉴 */
 .cate-list {
   position: absolute;
+  display: none;
   top: 75px;
   left: 0;
   width: 240;
@@ -211,7 +215,9 @@ body {
   background: #fff;
   z-index: 10;
 }
-
+.cate-list.active {
+  display: block;
+}
 .depth1 {
   overflow: auto;
   width: 240px;
@@ -233,9 +239,10 @@ body {
   color: #d3233a;
   font-weight: 400;
 }
-.depth2 {
+
+.subCategory {
   position: absolute;
-  display: block;
+  display: none;
   top: 0;
   left: 100%;
   overflow: auto;
@@ -246,16 +253,14 @@ body {
   border: 1px solid #e4e4e4;
   border-radius: 0 0 10px 0;
 }
-.depth2 .subCategory li a {
-  display: inline-block;
-  width: 100%;
-  height: 100%;
+.subCategory li a {
+  display: block;
   font-size: 16px;
   font-weight: 300;
   padding: 12px 20px;
   line-height: 1.55;
 }
-.depth2 .subCategory li a:hover {
+.subCategory li a:hover {
   background: #fafafa;
   color: #d3233a;
   font-weight: 400;
