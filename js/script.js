@@ -50,6 +50,36 @@ window.onload = function () {
     },
   });
 
+  // 제품 슬라이드
+  let productSwiper = new Swiper(".product-Swiper", {
+    slidesPerView: 4,
+    loop: true,
+    navigation: {
+      nextEl: ".prd-next",
+      prevEl: ".prd-prev",
+    },
+  });
+
+  // 배너 슬라이드
+  let bannerBarSwiper = new Swiper(".banner-bar-Swiper", {
+    slidesPerView: 1,
+    loop: true,
+
+    navigation: {
+      nextEl: ".banner-bar-next",
+      prevEl: ".banner-bar-prev",
+    },
+  });
+
+  //how-about
+  var howAboutSwiper = new Swiper(".ha-Swiper", {
+    slidesPerView: 5,
+    scrollbar: {
+      el: ".ha-page",
+      draggable: true,
+    },
+  });
+
   //슬라이드 멈춤 기능
   const swVisualPlay = document.querySelector(".visual-play");
   swVisualPlay.addEventListener("click", function () {
@@ -60,5 +90,18 @@ window.onload = function () {
       swVisual.autoplay.stop();
       swVisualPlay.classList.add("active");
     }
+  });
+  const swiperContainer = document.querySelector(".ha-swiper");
+  const parentWidth = swiperContainer.parentNode.offsetWidth;
+  const dragSize = Math.floor(parentWidth * 0.5);
+
+  const haSwiper = new Swiper(".ha-swiper", {
+    slidesPerView: 5,
+    direction: "horizontal",
+    scrollbar: {
+      el: ".ha-scrollbar",
+      draggable: true,
+      dragSize: dragSize,
+    },
   });
 };
